@@ -105,22 +105,27 @@ h6 {
   gap: 6px;
 }
 
-#header .profile .social-links a {
+#header .profile .social-links a,
+#header .profile .social-links #dark-mode-btn {
   font-size: 18px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #212431;
   color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  border: none;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
 }
 
-#header .profile .social-links a:hover {
+#header .profile .social-links a:hover,
+#header .profile .social-links #dark-mode-btn:hover {
   background: #149ddd;
   color: #fff;
   text-decoration: none;
@@ -1072,36 +1077,16 @@ section {
 /*--------------------------------------------------------------
 # Dark mode toggle button
 --------------------------------------------------------------*/
-#dark-mode-btn {
-  background: #212431;
-  border: none;
-  color: #a8a9b4;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  line-height: 0;
-  padding: 0;
-}
-
-#dark-mode-btn:hover {
-  background: #149ddd;
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Dark mode
 --------------------------------------------------------------*/
-body.transitions-ready {
+body.transitions-ready,
+body.transitions-ready * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-html.dark-mode {
+html.dark-mode body {
   background-color: #0f172a;
   color: #cbd5e1;
 }
@@ -1127,20 +1112,12 @@ html.dark-mode .about .content ul li {
   color: #cbd5e1;
 }
 
-html.dark-mode .facts .count-box span {
-  color: #e2e8f0;
-}
-
-html.dark-mode .facts .count-box p {
-  color: #94a3b8;
-}
-
 html.dark-mode .skills .progress .skill {
   color: #e2e8f0;
 }
 
 html.dark-mode .skills .progress-bar-wrap {
-  background: #1e293b;
+  background: #334155;
 }
 
 html.dark-mode .resume .resume-title {
@@ -1163,44 +1140,6 @@ html.dark-mode .resume .resume-item ul li {
 
 html.dark-mode .resume .resume-item::before {
   background: #0f172a;
-}
-
-html.dark-mode .contact .info {
-  background: #1e293b;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.4);
-}
-
-html.dark-mode .contact .info h4 {
-  color: #e2e8f0;
-}
-
-html.dark-mode .contact .info p {
-  color: #94a3b8;
-}
-
-html.dark-mode .contact .info i {
-  background: #0f172a;
-}
-
-html.dark-mode .contact .php-email-form {
-  background: #1e293b;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.4);
-}
-
-html.dark-mode .contact .php-email-form input,
-html.dark-mode .contact .php-email-form textarea {
-  background: #0f172a;
-  color: #e2e8f0;
-  border-color: #334155;
-}
-
-html.dark-mode .contact .php-email-form label {
-  color: #94a3b8;
-}
-
-html.dark-mode .contact .php-email-form .loading {
-  background: #1e293b;
-  color: #94a3b8;
 }
 
 /*--------------------------------------------------------------

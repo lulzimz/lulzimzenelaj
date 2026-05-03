@@ -477,9 +477,9 @@
         var now = new Date();
 
         // Age — updates on birthday
-        var dob = new Date(2001, 4, 27);
+        var dob = new Date(2001, 3, 27);
         var age = now.getFullYear() - dob.getFullYear();
-        if (now < new Date(now.getFullYear(), dob.getMonth(), dob.getDate())) age--;
+        if (now <= new Date(now.getFullYear(), dob.getMonth(), dob.getDate())) age--;
         document.getElementById("age").textContent = age;
 
         // Years of experience — from 2021
