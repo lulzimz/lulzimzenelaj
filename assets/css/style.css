@@ -1097,108 +1097,108 @@ section {
 /*--------------------------------------------------------------
 # Dark mode
 --------------------------------------------------------------*/
-body {
+body.transitions-ready {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode {
+html.dark-mode {
   background-color: #0f172a;
   color: #cbd5e1;
 }
 
-body.dark-mode .section-bg {
+html.dark-mode .section-bg {
   background: #1e293b;
 }
 
-body.dark-mode .section-title h2 {
+html.dark-mode .section-title h2 {
   color: #93c5fd;
 }
 
-body.dark-mode .section-title p {
+html.dark-mode .section-title p {
   color: #94a3b8;
 }
 
-body.dark-mode .about .content h3 {
+html.dark-mode .about .content h3 {
   color: #93c5fd;
 }
 
-body.dark-mode .about .content p,
-body.dark-mode .about .content ul li {
+html.dark-mode .about .content p,
+html.dark-mode .about .content ul li {
   color: #cbd5e1;
 }
 
-body.dark-mode .facts .count-box span {
+html.dark-mode .facts .count-box span {
   color: #e2e8f0;
 }
 
-body.dark-mode .facts .count-box p {
+html.dark-mode .facts .count-box p {
   color: #94a3b8;
 }
 
-body.dark-mode .skills .progress .skill {
+html.dark-mode .skills .progress .skill {
   color: #e2e8f0;
 }
 
-body.dark-mode .skills .progress-bar-wrap {
+html.dark-mode .skills .progress-bar-wrap {
   background: #1e293b;
 }
 
-body.dark-mode .resume .resume-title {
+html.dark-mode .resume .resume-title {
   color: #e2e8f0;
 }
 
-body.dark-mode .resume .resume-item h4 {
+html.dark-mode .resume .resume-item h4 {
   color: #e2e8f0;
 }
 
-body.dark-mode .resume .resume-item h5 {
+html.dark-mode .resume .resume-item h5 {
   background: #1e293b;
   color: #93c5fd;
 }
 
-body.dark-mode .resume .resume-item p,
-body.dark-mode .resume .resume-item ul li {
+html.dark-mode .resume .resume-item p,
+html.dark-mode .resume .resume-item ul li {
   color: #94a3b8;
 }
 
-body.dark-mode .resume .resume-item::before {
+html.dark-mode .resume .resume-item::before {
   background: #0f172a;
 }
 
-body.dark-mode .contact .info {
+html.dark-mode .contact .info {
   background: #1e293b;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.4);
 }
 
-body.dark-mode .contact .info h4 {
+html.dark-mode .contact .info h4 {
   color: #e2e8f0;
 }
 
-body.dark-mode .contact .info p {
+html.dark-mode .contact .info p {
   color: #94a3b8;
 }
 
-body.dark-mode .contact .info i {
+html.dark-mode .contact .info i {
   background: #0f172a;
 }
 
-body.dark-mode .contact .php-email-form {
+html.dark-mode .contact .php-email-form {
   background: #1e293b;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.4);
 }
 
-body.dark-mode .contact .php-email-form input,
-body.dark-mode .contact .php-email-form textarea {
+html.dark-mode .contact .php-email-form input,
+html.dark-mode .contact .php-email-form textarea {
   background: #0f172a;
   color: #e2e8f0;
   border-color: #334155;
 }
 
-body.dark-mode .contact .php-email-form label {
+html.dark-mode .contact .php-email-form label {
   color: #94a3b8;
 }
 
-body.dark-mode .contact .php-email-form .loading {
+html.dark-mode .contact .php-email-form .loading {
   background: #1e293b;
   color: #94a3b8;
 }

@@ -8,6 +8,12 @@
     <meta content="Lulzim Zenelaj - Full-Stack JavaScript Developer based in Pristina, Kosovo. Proficient in React, Node.js, React Native, TypeScript, PostgreSQL, and AWS." name="description" />
     <meta content="full stack developer, javascript, react, node.js, react native, typescript, postgresql, aws, firebase, pristina, kosovo" name="keywords" />
 
+    <script>
+      if (localStorage.getItem("darkMode") !== "0") {
+        document.documentElement.classList.add("dark-mode");
+      }
+    </script>
+
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -491,14 +497,17 @@
         var icon = btn.querySelector("i");
 
         function applyDark(dark) {
-          document.body.classList.toggle("dark-mode", dark);
+          document.documentElement.classList.toggle("dark-mode", dark);
           icon.className = dark ? "bx bx-sun" : "bx bx-moon";
         }
 
         applyDark(localStorage.getItem("darkMode") !== "0");
+        requestAnimationFrame(function () {
+          document.body.classList.add("transitions-ready");
+        });
 
         btn.addEventListener("click", function () {
-          var isDark = document.body.classList.contains("dark-mode");
+          var isDark = document.documentElement.classList.contains("dark-mode");
           applyDark(!isDark);
           localStorage.setItem("darkMode", !isDark ? "1" : "0");
         });
